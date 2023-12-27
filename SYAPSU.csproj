@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\board.gif" />
+    <None Remove="images\boardTop.png" />
+    <None Remove="images\butterfly.gif" />
+    <None Remove="images\krol.gif" />
+    <None Remove="images\NoImage.png" />
+    <None Remove="images\Баттерфляй.gif" />
+    <None Remove="images\Брасс.gif" />
+    <None Remove="images\Вольный стиль.gif" />
+    <None Remove="images\Звезда.gif" />
+    <None Remove="images\Кроль.gif" />
+    <None Remove="images\На спине.gif" />
+    <None Remove="images\Отдых.gif" />
+    <None Remove="images\Откупка длинная.gif" />
+    <None Remove="images\Откупка короткая.gif" />
+    <None Remove="images\Поплавок.gif" />
+    <None Remove="images\С доской сверху.png" />
+    <None Remove="images\С доской.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\Откупка длинная.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="5.2.7" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\NoImage.png" />
+    <Resource Include="images\Баттерфляй.gif" />
+    <Resource Include="images\Брасс.gif" />
+    <Resource Include="images\Вольный стиль.gif" />
+    <Resource Include="images\Звезда.gif" />
+    <Resource Include="images\На спине.gif" />
+    <Resource Include="images\Отдых.gif" />
+    <Resource Include="images\Откупка короткая.gif" />
+    <Resource Include="images\Поплавок.gif" />
+    <Resource Include="images\С доской.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
